@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Battambang', cursive;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(211, 210, 210);
+    border-bottom: 2px solid rgb(202, 198, 198);
+    box-shadow: 0 4px 6px rgb(128, 127, 127);
+}
+.header_main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left_header{
+    width: 15%;
+    height: 90%;
+    /* background-color: goldenrod; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.left_header .box{
+    width:30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.left_header .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.right_header{
+    width: 85%;
+    height: 90%;
+    /* background-color: rgb(123, 120, 113); */
+    display: flex;
+}
+
+.right_header .box_menu{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.box_menu ul{
+     list-style-type: none;
+     margin: 0px ;
+     padding: 0px;
+     display: flex;
+}
+.box_menu ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 3px 4px grey;
+}
+.right_header .box_search{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(88, 92, 88); */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.right_header .box_search form input{
+    padding: 5px;
+    width: 300px;
+    border-radius:10px;
+    outline: none;
+    position: relative;
+    border: 2px solid rgba(188, 186, 186, 0.368);
+    box-shadow: 4 0 3px white;
+}
+.box_search .fa-search{
+    color: rgb(83, 80, 80);
+    font-size: 15   px;
+    font-weight: bold;
+    position:absolute;
+    text-shadow: 0 0 3px gray;
+    top: 22px;
+    right: 120px;   
+}
+figure{
+    margin-top: 10px;
+}
+figure img{
+   width: 100%;
+   /* object-fit: none; */
+}
+.fix{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; 
+    position: relative;
+    overflow: hidden; 
+    border-radius: 3px;
+}
+.fix h1{
+    font-weight: bold;
+    transition:  all 0.4s;
+    text-shadow: 0 4px 5px ghostwhite;
+}
+.fix .show_left,.show_right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.17);
+}
+.fix .show_left{
+    left: 0px;
+}
+.fix .show_right{
+    right: 0px;
+}
+/* .fix:hover .show_left{
+    left: -210px;
+}
+.fix:hover .show_right{
+    right: -210px;
+} */
+/* .fix:hover h1{
+    opacity: 0;
+} */
+.fix .category{
+     opacity: 0; 
+}
+
+.category{
+    top: 10px;
+    left: 20px;
+    opacity: 8;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 100;
+}
+.category .all_category{
+    width: 100%;
+    padding: 5px 10px;
+    box-shadow: 0 3px 4px white;
+}
+.main_category{
+    width: 100%;
+    top: 70px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 1;
+}
+.main_category .men,.fashion,.women {
+    box-shadow: 0 2px 2px white;
+    width: 100%;
+    padding: 6px 5px;
+    transition: all 0.2s;
+}
+.main_category .men a,.fashion a,.women a{
+    text-decoration: none;
+    color: grey;
+    transition: all 0.2s;
+}
+.main_category .men:hover,.fashion:hover,.women:hover{
+    box-shadow:  0 4px 5px white;
+}
+.main_category .men:hover a,.fashion:hover a,.women:hover a{
+    /* box-shadow:  0 2px 6px white; */
+    color: rgba(17, 16, 16, 0.889);
+}
+.pro_box{
+    position: relative;
+    overflow: hidden;
+}
+.pro_box img{
+    transform: scale(1);
+    transition:all 0.6s;
+}
+.pro_box:hover img{
+    transform: scale(1.1);
+}
+.shadow_box{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 100%;
+    height: 45%;
+    bottom: -50px; 
+    transition: all 0.3s;
+    display: flex;
+    border-radius: 5px;
+}
+.shadow_box span i{
+    color: yellow;
+    font-size: 15px;
+}
+.shadow_box span{
+    position: absolute;
+    top: 13px;
+    color: white;
+    font-weight: bold;
+    left: 10px;
+    font-size: 20px;
+}
+.shadow_box .add{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    /*  background-color: rgba(5, 121, 19, 0.504);   */
+}
+.shadow_box .add a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.shadow_box .add a i{
+    color: white;
+    font-size: 20pt;
+}
+.shadow_box .add a span{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    top: -20px;
+    left: 50px;
+    transition: all 0.5s;
+    width: 100px;
+    height: 25px;
+    padding: 2px 3px;
+    background-color: green;
+    border-radius: 10px;
+    z-index: 2;   
+}
+.shadow_box .add a:hover span{
+    left: -55px;
+}
+.pro_box:hover .shadow_box{
+    bottom: 0px;
+}
+.left_shop{
+    position: absolute;
+    width: 60px;
+    height: 55%;
+    right: -60px;
+    top: 0px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.193);
+}
+.left_shop a i{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    top: 50px;
+    right: 20px;
+}
+.left_shop a:hover span{
+    left: -25px;
+}
+.left_shop a span{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+    left: 50;
+    top: 20px;
+    width: 75px;
+    height: 25px;
+    padding: 2px 3px;
+    background-color: green;
+    border-radius: 10px;
+}
+.pro_box:hover .left_shop{
+    right: -10px;
+}
+.partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+figure .sub a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 2px 5px gray;
+    font-weight: bold;
+}
+figure .sub_logo a{
+    color: rgb(100, 11, 11);
+    padding: 2px ;
+    font-size: 19px; 
+}
+figure .brand_logo{
+    width: 100%;
+}
+figure .brand_logo img{
+    border-radius: 50%;
+}
+
+/* responsivesss */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
